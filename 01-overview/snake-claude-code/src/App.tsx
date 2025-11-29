@@ -78,7 +78,7 @@ export default function SnakeGame() {
 
       // Check food collision
       if (newHead.x === food.x && newHead.y === food.y) {
-        setScore(prev => prev + 10);
+        setScore(prev => prev + 5);
         setFood(generateFood());
       } else {
         newSnake.pop();
